@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Recommendations.css';
 class Recommendations extends React.Component {
 	render() {
 		return (

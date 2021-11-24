@@ -7,8 +7,7 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className="App">
-      <div className="content-wrapper cf">
-        <h1>Let's get this bread!</h1>
+      <div className="content-wrapper">
         <Header/>
         <SelectionMenu/>
         <Recommendations/>

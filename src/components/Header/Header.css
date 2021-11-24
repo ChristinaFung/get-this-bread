@@ -1,3 +1,28 @@
 .app-header {
-	border: 1px solid lightcoral;
+	padding: 100px 50px;
+	background: papayawhip;
+}
+
+.title-banner {
+	background: #937861;
+	padding: 50px;
+	color: white;
+	margin: 0px 25px;
+	position: relative;
+	/* display: inline-block; */
+}
+
+.title-banner::before {
+ content: '';
+ position: absolute;
+ top: 20px;
+ left: 20px;
+ border: 2px solid white;
+ width: calc(100% - 48px);
+ height: calc(100% - 48px);
+}
+
+.title-text {
+	font-size: 60px;
+	margin-bottom: 25px;
 }
