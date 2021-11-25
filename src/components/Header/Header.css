@@ -1,25 +1,25 @@
 .app-header {
 	padding: 100px 50px;
-	background: papayawhip;
+	background: url('../../assets/food.png') repeat;
 }
 
 .title-banner {
-	background: #937861;
+	background: #2b201a;
 	padding: 50px;
-	color: white;
-	margin: 0px 25px;
+	color: #ecddc7;
+	/* margin: 0px 25px; */
 	position: relative;
 	/* display: inline-block; */
 }
 
 .title-banner::before {
- content: '';
- position: absolute;
- top: 20px;
- left: 20px;
- border: 2px solid white;
- width: calc(100% - 48px);
- height: calc(100% - 48px);
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	border: 2px solid #ecddc7;
+	width: calc(100% - 48px);
+	height: calc(100% - 48px);
 }
 
 .title-text {

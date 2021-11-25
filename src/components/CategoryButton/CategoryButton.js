@@ -1,10 +1,17 @@
 import React from "react";
-import './CategoryButton.css';
+import "./CategoryButton.css";
 
 class CategoryButton extends React.Component {
+	static defaultProps = {
+		buttonLabel: 'Category Button',
+		iconType: 'bread'
+	}
+
 	render() {
+		const buttonLabel = this.props.buttonLabel;
+
 		return (
-			<button className="category-button">Category Button</button>
+			<button className="category-button">{buttonLabel}</button>
 		)
 	}
 }
