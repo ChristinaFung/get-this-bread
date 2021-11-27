@@ -1,3 +1,20 @@
 .app-footer {
-  border: 1px solid red;
+  background: #2b201a;
+  color: #ecddc7;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.app-footer .inner-content {
+  text-align: center;
+}
+
+a {
+  color: #fac564;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: papayawhip;
 }

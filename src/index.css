@@ -370,6 +370,9 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
 /* clearfix by nicolas gallagher */
 /* https://nicolasgallagher.com/micro-clearfix-hack/ */
 /**

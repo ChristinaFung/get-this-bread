@@ -1,17 +1,15 @@
-.App {
-  /* text-align: center; */
+.app {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 100vh;
   position: relative;
-
+  background: papayawhip;
 }
 
-.content-wrapper {
+.app-content {
   width: 100%;
   position: relative;
   flex-grow: 1;
-  
 }
 
 

@@ -1,5 +1,5 @@
 .app-header {
-	padding: 100px 50px;
+	padding: 100px 0px;
 	background: url('../../assets/food.png') repeat;
 }
 
@@ -7,9 +7,7 @@
 	background: #2b201a;
 	padding: 50px;
 	color: #ecddc7;
-	/* margin: 0px 25px; */
 	position: relative;
-	/* display: inline-block; */
 }
 
 .title-banner::before {
