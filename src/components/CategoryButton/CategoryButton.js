@@ -4,6 +4,7 @@ import "./CategoryButton.css";
 class CategoryButton extends React.Component {
 	static defaultProps = {
 		buttonLabel: 'Category Button'
+		// todo: add custom class prop
 	}
 
 	render() {

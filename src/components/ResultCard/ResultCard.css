@@ -1,0 +1,30 @@
+.result-card {
+	background: #fff;
+	/* border: 2px solid #2b201a; */
+	padding: 20px;
+	display: inline-block;
+}
+
+.img-container {
+	position: relative;
+}
+
+.img-container::before {
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	border: 2px solid #ecddc7;
+	width: calc(100% - 48px);
+	height: calc(100% - 48px);
+	z-index:
+}
+
+.resto-header {
+	display: flex;
+	align-items: center;
+}
+
+.resto-name {
+	margin-right: 15px;
+}
