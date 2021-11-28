@@ -3,8 +3,7 @@ import "./CategoryButton.css";
 
 class CategoryButton extends React.Component {
 	static defaultProps = {
-		buttonLabel: 'Category Button',
-		iconType: 'bread'
+		buttonLabel: 'Category Button'
 	}
 
 	render() {

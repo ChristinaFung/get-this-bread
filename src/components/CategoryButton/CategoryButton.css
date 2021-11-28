@@ -1,3 +1,20 @@
 .category-button {
-	border: 1px solid black;
+	border: 2px solid #2b201a;
+	color: #2b201a;
+	background: none;
+	padding: 10px 15px;
+	margin-right: 10px;
+	font-weight: 600;
+	min-width: 100px;
+	cursor: pointer;
+}
+
+.category-button:hover {
+	color: #2b201a;
+	background: #fac564;
+}
+
+.category-button:focus, .category-button:active {
+	color: #fac564;
+	background: #2b201a;
 }
