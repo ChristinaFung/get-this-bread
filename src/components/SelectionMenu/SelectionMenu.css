@@ -1,4 +1,7 @@
 .selection-menu {
-	border: 1px solid deepskyblue;
 	padding: 25px 0;
+}
+
+.instruction-copy {
+	margin-bottom: 15px;
 }
