@@ -11,7 +11,7 @@ class CategoryButton extends React.Component {
 		const buttonLabel = this.props.buttonLabel;
 
 		return (
-			<button className="category-button">{buttonLabel}</button>
+			<button className="category-button" onClick={this.props.onClick}>{buttonLabel}</button>
 		)
 	}
 }

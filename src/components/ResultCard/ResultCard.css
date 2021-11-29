@@ -14,10 +14,9 @@
 	position: absolute;
 	top: 20px;
 	left: 20px;
-	border: 2px solid #ecddc7;
+	border: 2px solid #fff;
 	width: calc(100% - 48px);
 	height: calc(100% - 48px);
-	z-index:
 }
 
 .resto-header {
