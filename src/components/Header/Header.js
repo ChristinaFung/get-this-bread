@@ -7,7 +7,7 @@ class Header extends React.Component {
 				<div className="inner-content">
 					<div className="title-banner">
 						<h1 className="title-text">let's get this bread! </h1>
-						<h3 className="subtitle-text">Hungry for carbs? Grab some hot + fresh suggestions here!</h3>
+						<h2 className="subtitle-text">Hungry for carbs? Grab some hot + fresh suggestions here!</h2>
 					</div>
 				</div>
 			</header>

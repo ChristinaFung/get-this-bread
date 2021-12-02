@@ -5,8 +5,19 @@
 	display: inline-block;
 }
 
+.result-card a {
+	color: #c54305; 
+	/* opther option #a53500 */
+}
+
+.result-card a:hover, .result-card a:focus, .result-card a:active {
+	color: #c54305;
+	text-decoration: underline;
+}
+
 .img-container {
 	position: relative;
+	overflow: hidden;
 }
 
 .img-container::before {
