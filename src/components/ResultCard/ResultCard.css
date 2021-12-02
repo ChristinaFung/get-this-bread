@@ -3,6 +3,13 @@
 	/* border: 2px solid #2b201a; */
 	padding: 20px;
 	display: inline-block;
+	width: calc(33% - 20px);
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.result-card:nth-child(3n) {
+	margin-right: 0px;
 }
 
 .result-card a {
@@ -15,9 +22,19 @@
 	text-decoration: underline;
 }
 
+.result-card .label {
+	display: inline-block;
+	color: #c54305;
+	margin-right: 5px;
+}
+
 .img-container {
 	position: relative;
 	overflow: hidden;
+	display: flex;
+  justify-content: center;
+	margin-bottom: 10px;
+	background: #cccccc;
 }
 
 .img-container::before {
@@ -30,11 +47,44 @@
 	height: calc(100% - 48px);
 }
 
+.copy-container {
+	text-align: left;
+}
+
 .resto-header {
 	display: flex;
 	align-items: center;
+	margin-bottom: 10px;
 }
 
 .resto-name {
 	margin-right: 15px;
+}
+
+.rating, .phone, .address {
+	margin-bottom: 5px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1023px) {
+	.result-card {
+		width: calc(50% - 30px);
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+	
+	.result-card:nth-child(2n) {
+		margin-right: 0px;
+	}
+
+	.result-card:nth-child(3n) {
+		margin-right: 30px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.result-card {
+		width: 100%;
+		margin-right: 0px;
+	}
 }
