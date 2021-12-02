@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = process.env.REACT_APP_CORS_ANYWHERE ? process.env.REACT_APP_CORS_ANYWHERE : ''
+const baseUrl = process.env.REACT_APP_CORS_ANYWHERE ? process.env.REACT_APP_CORS_ANYWHERE : 'https://kurisu-cors-anywhere.herokuapp.com/'
 
 const apiKey = process.env.REACT_APP_YELP_API_KEY;
 
