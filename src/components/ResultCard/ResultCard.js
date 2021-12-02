@@ -1,25 +1,27 @@
 /* eslint-disable no-template-curly-in-string */
 import React from "react";
 import "./ResultCard.css";
+import fpoImg from "../../assets/fpo.png";
 
 class ResultCard extends React.Component {
 	static defaultProps = {
 		name: "Resto Name",
 		price: "XXX",
 		url: "#",
-		imgUrl: "http://placehold.it/300x300"
+		// imgUrl: "http://placehold.it/300x300"
 	}
 
 	render() {
 		const name = this.props.name;
 		const price = this.props.price;
 		const url = this.props.url;
-		const imgUrl = this.props.imgUrl;
+		// const imgUrl = this.props.imgUrl;
 
 		return (
 			<div className="result-card">
 				<div className="img-container">
-					<img src={imgUrl} alt="" />
+					{/* <img src={imgUrl} alt="" /> */}
+					<img src={fpoImg} alt="" />
 				</div>
 				<div className="copy-container">
 					<div className="resto-header">
