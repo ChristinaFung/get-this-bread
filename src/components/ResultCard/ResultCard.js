@@ -1,36 +1,23 @@
 /* eslint-disable no-template-curly-in-string */
 import React from "react";
 import "./ResultCard.css";
-import fpoImg from "../../assets/fpo.png";
 
 class ResultCard extends React.Component {
-	static defaultProps = {
-		result: {
-			id: 'placeholder-id',
-			name: 'Placeholder Restaurant',
-			phone: "+1 123-456-7890",
-			price: "$$$$",
-			rating: "5",
-			url: "#",
-			address: "1 Test Street, Toronto, ON XXX XXX" ,
-			imgUrl: "http://placehold.it/300x300"
-		}
-	}
+
 
 	render() {
 		const name = this.props.result.name;
-		const phone = this.props.result.phone || this.props.result.display_phone;
+		const phone = this.props.result.display_phone;
 		const price = this.props.result.price || '?';
 		const url = this.props.result.url;
 		const rating = this.props.result.rating || '?';
 		const address = this.props.result.location.formatted_address.toString();
-		// const imgUrl = this.props.result.photos[0];
+		const imgUrl = this.props.result.photos[0];
 
 		return (
 			<div className="result-card">
 				<div className="img-container">
-					{/* <img src={imgUrl} alt="" /> */}
-					<img src={fpoImg} alt="" />
+					<img src={imgUrl} alt="" />
 				</div>
 				<div className="copy-container">
 					<div className="resto-header">
