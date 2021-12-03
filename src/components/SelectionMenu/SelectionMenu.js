@@ -8,7 +8,6 @@ const buttonKeys = ['burgers', 'noodles', 'pizza', 'sandwiches'];
 class SelectionMenu extends React.Component {
 	// todo: when you select category, make API call to search for Yelp recos in toronto based on that category key
 	selectCategory = (category) => {
-		console.log("you picked: ",category);
 		getData(category)
 			.then((response) => {
 				// store the results to the state

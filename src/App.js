@@ -30,9 +30,7 @@ class App extends React.Component {
   }
 
   setResults = (data) => {
-    console.log("before: ", this.state.results);
     this.setState({ results: data });
-    console.log("after: ", this.state.results);
   }
 
   render() {

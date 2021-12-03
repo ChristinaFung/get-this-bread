@@ -37,7 +37,6 @@ export const getData = async (category) => {
   }`;
 
   const data = await graphQLClient.request(query);
-  console.log(data);
 
   return data;      
 }
