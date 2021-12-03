@@ -5,23 +5,26 @@ import fpoImg from "../../assets/fpo.png";
 
 class ResultCard extends React.Component {
 	static defaultProps = {
-		name: "Restaurant Name",
-		phone: "+1 123-456-7890",
-		price: "XXX",
-		rating: "X",
-		url: "#",
-		address: "1 Placeholder Street, Toronto, ON XXX XXX, Canada" 
-		// imgUrl: "http://placehold.it/300x300"
+		result: {
+			id: 'placeholder-id',
+			name: 'Placeholder Restaurant',
+			phone: "+1 123-456-7890",
+			price: "$$$$",
+			rating: "5",
+			url: "#",
+			address: "1 Test Street, Toronto, ON XXX XXX" ,
+			imgUrl: "http://placehold.it/300x300"
+		}
 	}
 
 	render() {
-		const name = this.props.name;
-		const phone = this.props.phone;
-		const price = this.props.price;
-		const url = this.props.url;
-		const rating = this.props.rating;
-		const address = this.props.address;
-		// const imgUrl = this.props.imgUrl;
+		const name = this.props.result.name;
+		const phone = this.props.result.phone || this.props.result.display_phone;
+		const price = this.props.result.price || '?';
+		const url = this.props.result.url;
+		const rating = this.props.result.rating || '?';
+		const address = this.props.result.location.formatted_address.toString();
+		// const imgUrl = this.props.result.photos[0];
 
 		return (
 			<div className="result-card">
@@ -31,7 +34,7 @@ class ResultCard extends React.Component {
 				</div>
 				<div className="copy-container">
 					<div className="resto-header">
-						<h3 className="resto-name"><a href={url}>{name} ({price})</a></h3>
+						<h3 className="resto-name"><a href={url} target="_blank" rel="noreferrer">{name} ({price})</a></h3>
 					</div>
 					<div className="rating">
 						<h4 className="label">Rating: </h4>

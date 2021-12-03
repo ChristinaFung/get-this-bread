@@ -1,11 +1,11 @@
 .result-card {
 	background: #fff;
-	/* border: 2px solid #2b201a; */
 	padding: 20px;
-	display: inline-block;
 	width: calc(33% - 20px);
 	margin-right: 20px;
 	margin-bottom: 20px;
+	height: 500px;
+	float: left;
 }
 
 .result-card:nth-child(3n) {
@@ -14,7 +14,6 @@
 
 .result-card a {
 	color: #c54305; 
-	/* opther option #a53500 */
 }
 
 .result-card a:hover, .result-card a:focus, .result-card a:active {
@@ -33,18 +32,15 @@
 	overflow: hidden;
 	display: flex;
   justify-content: center;
+	align-items: center;
 	margin-bottom: 10px;
-	background: #cccccc;
+	background: #2b201a;
+	height: 300px;
 }
 
-.img-container::before {
-	content: '';
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	border: 2px solid #fff;
-	width: calc(100% - 48px);
-	height: calc(100% - 48px);
+.img-container img {
+	width: 100%;
+	flex-grow: 1;
 }
 
 .copy-container {
