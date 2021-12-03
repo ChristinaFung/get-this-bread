@@ -1,24 +1,22 @@
 import React from "react";
 import "./Recommendations.css";
+import ResultCard from "../../components/ResultCard/ResultCard";
 class Recommendations extends React.Component {
-	static defaultProps = {
-		results: [{
-			id: 'placeholder-id',
-			name: 'Placeholder Restaurant',
-			phone: "+1 123-456-7890",
-			price: "$$$$",
-			rating: "5",
-			url: "#",
-			address: "1 Test Street, Toronto, ON XXX XXX" ,
-			imgUrl: "http://placehold.it/300x300"
-		}]
-	}
-
 	render() {
+		const results = this.props.results;
+
 		return (
 			<div className="recommendations">
 				<div className="inner-content cf">
 					{/* WIP component */}
+					{
+						results.map((res) => 
+							<ResultCard
+								key={res.id}
+								result={res}
+							/>
+						)
+					}
 				</div>
 			</div>
 		)

@@ -6,13 +6,42 @@ import Recommendations from './components/Recommendations/Recommendations';
 import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      results: [
+        {
+          id: 'placeholder-id',
+          name: 'Placeholder Restaurant',
+          display_phone: "+1 123-456-7890",
+          price: "$$$$",
+          rating: "5",
+          url: "#",
+          location: {
+            formatted_address: "1 Test Street, Toronto, ON XXX XXX"
+          },
+          photos: ["http://placehold.it/300x300"]
+        }
+      ]
+    }
+
+    this.setResults = this.setResults.bind(this);
+  }
+
+  setResults = (data) => {
+    console.log("before: ", this.state.results);
+    this.setState({ results: data });
+    console.log("after: ", this.state.results);
+  }
+
   render() {
     return (
       <div className="app">
         <div className="app-content">
           <Header/>
-          <SelectionMenu/>
-          <Recommendations/>
+          <SelectionMenu setResults={this.setResults}/>
+          <Recommendations results={this.state.results}/>
         </div>
         <Footer/>
       </div>
