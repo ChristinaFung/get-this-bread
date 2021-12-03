@@ -2,7 +2,7 @@
 
 Let's get this bread! A fun little web app to explore React and GraphQL, using the Yelp API. Designed and built by yours truly.
 
-# Quick Start
+## Quick Start
 
 1. run `npm install`
 2. run `npm run start` in project root
@@ -10,7 +10,7 @@ Let's get this bread! A fun little web app to explore React and GraphQL, using t
 
 Dev build will load on [http://localhost:3000](http://localhost:3000)!
 
-# Tech Stack
+## Tech Stack
 
 This web app is built with the following frameworks and dependencies:
 
@@ -19,7 +19,7 @@ This web app is built with the following frameworks and dependencies:
 - [graphql-request](https://www.npmjs.com/package/graphql-request)
 - [cors-anywhere](https://github.com/Rob--W/cors-anywhere)
 
-# Deployment
+## Deployment
 
 The production build is served via [Netlify](https://www.netlify.com/) and uses a self-served [Heroku](https://heroku.com) instance of [cors-anywhere](https://github.com/Rob--W/cors-anywhere) to enable our Yelp API queries.
 
@@ -27,10 +27,10 @@ To trigger a new production build, merge changes from `develop` into `release`.
 
 Check it out here:  [https://get-this-bread.netlify.app/](https://get-this-bread.netlify.app/)
 
-# Task Tracking
+## Task Tracking
 
 Please check out the [Issues](https://github.com/ChristinaFung/get-this-bread/issues) page and [project board](https://github.com/ChristinaFung/get-this-bread/projects/1) for ongoing progress with features!
 
-# Misc. Credits
+## Misc. Credits
 
 Header background: [Subtle Patterns by Toptal](https://www.toptal.com/designers/subtlepatterns/)
